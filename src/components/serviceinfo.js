@@ -1,7 +1,5 @@
 import React,{Component} from 'react';
-import {MDBBtn, MDBInput,MDBIcon } from 'mdbreact';
 import QualityRange from './qualityrange';
-import 'mdbreact/dist/css/mdb.css';
 import './serviceinfo.css';
 import YearPicker from "react-year-picker"; 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -47,8 +45,7 @@ class ServiceInfo extends Component{
           state: { yearPicked:this.state.yearPicked,userName:this.state.userName,duOptions:this.state.duOptions,locationOptions:this.state.locationOptions,serviceName:this.state.serviceName,serviceManager:this.state.serviceManager,accountName:this.state.accountName,deliveryManager:this.state.deliveryManager} }
         );
     }
-    
-    
+        
     handleServiceName(serviceName){
                this.setState({
                    serviceName:serviceName
